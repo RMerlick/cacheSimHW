@@ -7,6 +7,9 @@
 
 using namespace std;
 
+// code needs to be ran with this command after making, 
+// ./cache_sim numEntries(int) associativity(int, mult 2) inputFileName
+
 int main(int argc, char *argv[])
 {
     //checking for the correct number of input parameters
