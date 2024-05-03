@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
     while (fin >> addr)
     {
         hitOrMiss = cache.access(addr);
-        fout << curr << " | " << addr << ": ";
+        fout << curr << " | " << cache.binaryToDecimal(addr) << ": ";
         fout << (!hitOrMiss ? "MISS\n" : "HIT\n");
         curr++;
     }
